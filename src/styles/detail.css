@@ -1,0 +1,292 @@
+.detail {
+    margin: 100px auto 20px auto;
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 900px;
+}
+
+.detail h1 {
+font-size: 50px;
+text-align: center;
+}
+
+.detail .innerDetail {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+-ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+-webkit-box-orient: horizontal;
+-webkit-box-direction: normal;
+    -ms-flex-direction: row;
+        flex-direction: row;
+}
+
+.detail .innerDetail img {
+border-radius: 10px;
+width: 50%;
+margin: 8px 8px;
+height: auto;
+border: white 5px solid;
+}
+
+.detail .innerDetail .descriptDetail {
+background-color: white;
+padding: 10px 20px 10px 20px;
+border-radius: 10px;
+}
+
+.detail .innerDetail .descriptDetail h2 {
+padding: 8px;
+text-align: center;
+}
+
+.detail .innerDetail .descriptDetail p {
+margin-bottom: 8px;
+}
+
+.detail .innerDetail .menu {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+margin-top: 5px;
+-ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+width: 100%;
+-webkit-box-orient: horizontal;
+-webkit-box-direction: normal;
+    -ms-flex-direction: row;
+        flex-direction: row;
+}
+
+.detail .innerDetail .menu .drink {
+background-color: white;
+margin: 3px;
+padding: 5px;
+border-radius: 10px;
+width: 40%;
+}
+
+.detail .innerDetail .menu .drink h3 {
+text-align: center;
+}
+
+.detail .innerDetail .menu .drink .innerDrink {
+border: 2px #2b2b2b solid;
+padding: 10px;
+overflow: auto;
+height: 200px;
+width: 100%;
+text-align: left;
+border-radius: 5px;
+}
+
+.detail .innerDetail .menu .drink .innerDrink p {
+margin-bottom: 15px;
+background-color: #2b2b2b;
+padding: 5px;
+color: white;
+border-radius: 5px;
+}
+
+.detail .innerDetail .menu .food {
+background-color: white;
+margin: 3px;
+padding: 5px;
+border-radius: 10px;
+width: 40%;
+}
+
+.detail .innerDetail .menu .food h3 {
+text-align: center;
+}
+
+.detail .innerDetail .menu .food .innerFood {
+border: 2px #2b2b2b solid;
+padding: 10px;
+overflow: scroll;
+height: 200px;
+width: 100%;
+text-align: left;
+border-radius: 5px;
+}
+
+.detail .innerDetail .menu .food .innerFood p {
+margin-bottom: 15px;
+background-color: #2b2b2b;
+padding: 5px;
+color: white;
+border-radius: 5px;
+}
+
+.review {
+margin-top: 20px;
+background-color: #e0e0e0;
+padding: 20px;
+border-radius: 10px;
+max-width: 900px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.review .innerReview {
+border: 2px #2b2b2b solid;
+padding: 10px;
+overflow: auto;
+width: 55%;
+height: 300px;
+text-align: left;
+border-radius: 5px;
+}
+
+.review .innerReview .cardReview {
+background-color: white;
+border-radius: 10px;
+max-width: 400px;
+margin: 0 auto 10px auto;
+}
+
+.review .innerReview .cardReview .innercard {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+-webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+        justify-content: space-evenly;
+border-bottom: 1px solid black;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+background-color: #8a8989;
+border-radius: 10px 10px 0 0;
+}
+
+.review .innerReview .cardReview .innercard .account {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+}
+
+.review .innerReview .cardReview .innercard .account img {
+width: 30px;
+height: 30px;
+margin-right: 5px;
+padding: 3px;
+}
+.review {
+    margin-bottom: 50px;
+}
+.review .innerReview .cardReview .innercard .account p {
+font-size: 15px;
+font-weight: bold;
+}
+
+.review .innerReview .cardReview .innercard .tglReview p {
+font-size: 15px;
+}
+
+.review .innerReview .cardReview .reviewConsumen {
+text-align: center;
+padding: 20px;
+}
+
+.containerRev {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: horizontal;
+-webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+-ms-flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;
+-webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+        justify-content: space-evenly;
+}
+
+.containerRev .inputReview {
+background-color: white;
+border-radius: 5px;
+width: 35%;
+margin-bottom: auto;
+padding: 15px;
+border: 2px #2b2b2b solid;
+}
+
+.containerRev .inputReview h3 {
+text-align: center;
+}
+
+.containerRev .inputReview #myReviewName {
+width: 100%;
+height: 30px;
+background-color: #2b2b2b;
+color: white;
+border-radius: 5px;
+min-height: 44px;
+}
+
+.containerRev .inputReview #myReview {
+width: 100%;
+height: 100px;
+background-color: #2b2b2b;
+color: white;
+border-radius: 5px;
+}
+
+.containerRev .inputReview button {
+background-color: #DA0037;
+color: white;
+padding: 10px;
+border-radius: 5px;
+border: none;
+cursor: pointer;
+min-height: 44px;
+}
+
+.containerRev .inputReview button:hover {
+background-color: #2b2b2b;
+}
+
+.containerRev .inputReview button:active {
+-webkit-transform: translateY(4px);
+        transform: translateY(4px);
+}
+
+@media screen and (max-width: 600px) {
+.detail .innerDetail img {
+    width: 100%;
+}
+.containerRev .inputReview {
+    width: 90%;
+    margin-bottom: 10px;
+}
+.containerRev .innerReview {
+    width: 90%;
+}
+}
+
+@media screen and (max-width: 450px) {
+.detail .innerDetail .menu .food {
+    width: 100%;
+}
+.detail .innerDetail .menu .drink {
+    width: 100%;
+}
+}
+/*# sourceMappingURL=detail.css.map */

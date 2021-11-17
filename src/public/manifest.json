@@ -1,0 +1,35 @@
+{
+    "name": "Jajan Antari Restaurant",
+    "short_name": "Jajan Antari",
+    "description": "Information About Jajan Antari Restaurant",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#d84315",
+    "icons": [
+    {
+    "src": "/icons/icon-64x64.png",
+    "sizes": "64x64",
+    "type": "image/png",
+    "purpose": "any maskable"
+    },
+    {
+    "src": "/icons/icon-72x72.png",
+    "sizes": "72x72",
+    "type": "image/png",
+    "purpose": "any maskable"
+    },
+    {
+    "src": "/icons/icon-96x96.png",
+    "sizes": "96x96",
+    "type": "image/png",
+    "purpose": "any maskable"
+    },
+    {
+    "src": "/icons/icon-128x128.png",
+    "sizes": "128x128",
+    "type": "image/png",
+    "purpose": "any maskable"
+    }
+]
+}
