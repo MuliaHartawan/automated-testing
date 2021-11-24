@@ -1,8 +1,9 @@
+/* eslint-disable no-restricted-globals */
 import 'regenerator-runtime';
 import CacheHelper from './utils/cache-helper';
 
 const {
-    assets
+    assets,
 } = global.serviceWorkerOption;
 
 self.addEventListener('install', (event) => {

@@ -1,4 +1,4 @@
-import CONFIG from "../../globals/config";
+import CONFIG from '../../globals/config';
 import '../../component/card-item';
 
 const createRestaurantDetailTemplate = (restaurant) => `
@@ -33,7 +33,7 @@ const createRestaurantItemTemplate = (restaurants) => {
         cardItem.item = restaurant;
         document.querySelector('.products').appendChild(cardItem);
     });
-}
+};
 
 const myRepeatFoodAndDrink = (data, no) => `
     <p>${no}. ${data.name}</p>
@@ -68,12 +68,11 @@ const createLikedButtonTemplate = () => `
     </button>
 `;
 
-
 export {
     createRestaurantDetailTemplate,
     createRestaurantItemTemplate,
     createLikeButtonTemplate,
     createLikedButtonTemplate,
     myRepeatFoodAndDrink,
-    myReview
+    myReview,
 };

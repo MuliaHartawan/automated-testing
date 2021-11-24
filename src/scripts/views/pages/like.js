@@ -1,13 +1,15 @@
-import favoriteRestaurantIdb from "../../data/favorite-restaurant-idb";
+import favoriteRestaurantIdb from '../../data/favorite-restaurant-idb';
 import {
-    createRestaurantItemTemplate
-} from "../templates/template-creator";
+    createRestaurantItemTemplate,
+}
+from '../templates/template-creator';
+
 const Like = {
     async render() {
         return `
         <main>
             <section class="content">
-                <div class="products">
+                <div class="products" id="list-product" tabindex="0">
                     
                 </div>
             </section>
@@ -19,5 +21,6 @@ const Like = {
         const restaurants = await favoriteRestaurantIdb.getAllRestaurant();
         createRestaurantItemTemplate(restaurants);
     },
-}
-export default Like
+};
+
+export default Like;

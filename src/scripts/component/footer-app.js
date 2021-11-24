@@ -1,12 +1,13 @@
 class FooterApp extends HTMLElement {
-    constructor(){
+    constructor() {
         super();
     }
-    connectedCallback(){
+
+    connectedCallback() {
         this.render();
     }
 
-    render(){
+    render() {
         this.innerHTML = `
         <footer>
             <span >Copyright © 2021 - Jajan Antari</span>

@@ -1,5 +1,8 @@
-import RestaurantSource from "../../data/restaurant-source";
-import { createRestaurantItemTemplate } from "../templates/template-creator";
+import RestaurantSource from '../../data/restaurant-source';
+import {
+    createRestaurantItemTemplate,
+} from '../templates/template-creator';
+
 const Home = {
     async render() {
         return `<div class="hero">
@@ -17,7 +20,7 @@ const Home = {
                             <div class="container">
                                 <hr>
                             </div>
-                            <div class="products">
+                            <div class="products" id="list-product" tabindex="0">
                                 
                             </div>
                         </div>

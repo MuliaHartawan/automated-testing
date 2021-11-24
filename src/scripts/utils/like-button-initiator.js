@@ -1,13 +1,13 @@
 import FavoriteRestoIdb from '../data/favorite-restaurant-idb';
 import {
   createLikeButtonTemplate,
-  createLikedButtonTemplate
+  createLikedButtonTemplate,
 } from '../views/templates/template-creator';
 
 const LikeButtonInitiator = {
   async init({
     likeButtonContainer,
-    restaurant
+    restaurant,
   }) {
     this._likeButtonContainer = likeButtonContainer;
     this._restaurant = restaurant;
@@ -16,7 +16,7 @@ const LikeButtonInitiator = {
 
   async _renderButton() {
     const {
-      id
+      id,
     } = this._restaurant;
 
     if (await this._isRestaurantExist(id)) {
@@ -36,7 +36,6 @@ const LikeButtonInitiator = {
 
     const likeButton = document.querySelector('#likeButton');
     likeButton.addEventListener('click', async () => {
-      console.log("Masuk Dong");
       await FavoriteRestoIdb.putRestaurant(this._restaurant);
       this._renderButton();
     });

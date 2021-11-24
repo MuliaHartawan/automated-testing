@@ -1,19 +1,18 @@
-import UrlParser from "../../routes/url-parser";
-import RestaurantSource from "../../data/restaurant-source";
-import LikeButtonInitiator from "../../utils/like-button-initiator";
+import UrlParser from '../../routes/url-parser';
+import RestaurantSource from '../../data/restaurant-source';
+import LikeButtonInitiator from '../../utils/like-button-initiator';
 import {
-    createLikeButtonTemplate,
-    createRestaurantDetailTemplate
-} from "../templates/template-creator";
+    createRestaurantDetailTemplate,
+} from '../templates/template-creator';
 import {
     repeatMenu,
-    repeatReview
-} from "../../utils/menu-initator";
+    repeatReview,
+} from '../../utils/menu-initator';
 
 const Detail = {
     async render() {
         return `
-        <main>
+        <main id="list-product" tabindex="0">
             <component-detail>
             <div class="detail">
                 <h1>Deskripsi Restaurant</h1>
@@ -70,7 +69,6 @@ const Detail = {
         const AllDataReview = restaurant.customerReviews;
         repeatReview(AllDataReview, componentReview);
 
-        // buttonLike.innerHTML = createLikeButtonTemplate
         LikeButtonInitiator.init({
             likeButtonContainer: document.querySelector('#likeButtonContainer'),
             restaurant: {
@@ -80,10 +78,10 @@ const Detail = {
                 city: restaurant.city,
                 pictureId: restaurant.pictureId,
                 rating: restaurant.rating,
-            }
+            },
 
         });
     },
-}
+};
 
 export default Detail;
